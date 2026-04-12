@@ -47,7 +47,7 @@ export function MobileNav() {
               key={item.href}
               href={item.href}
               className={cn(
-                "block rounded-lg px-3 py-3.5 font-accent text-[0.72rem] font-medium uppercase tracking-[0.22em] text-foreground/80 transition-colors hover:bg-muted/80 hover:text-foreground",
+                "block rounded-lg px-3 py-3.5 font-accent text-[0.72rem] font-medium uppercase tracking-[0.22em] text-muted-foreground transition-colors hover:bg-muted/80 hover:text-foreground",
               )}
             >
               {item.label}

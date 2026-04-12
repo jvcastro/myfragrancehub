@@ -29,7 +29,7 @@ export function SiteHeader({ brandName }: { brandName?: string | null }) {
               key={item.href}
               href={item.href}
               className={cn(
-                "font-accent text-[0.68rem] font-medium uppercase tracking-[0.26em] text-foreground/55 transition-colors duration-300",
+                "font-accent text-[0.68rem] font-medium uppercase tracking-[0.26em] text-muted-foreground transition-colors duration-300",
                 "hover:text-foreground",
               )}
             >

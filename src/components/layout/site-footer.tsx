@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="border-t border-foreground/[0.08] bg-[oklch(0.965_0.012_78)]">
+    <footer className="border-t border-foreground/[0.08] bg-[var(--surface-sunken)]">
       <div className="mx-auto min-w-0 max-w-6xl px-4 py-14 sm:px-6 sm:py-16 md:px-8 md:py-20">
         <div className="flex flex-col gap-10 sm:gap-12 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex max-w-md flex-col gap-4 sm:flex-row sm:items-start sm:gap-5">

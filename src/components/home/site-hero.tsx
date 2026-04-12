@@ -21,10 +21,10 @@ export function SiteHero({
       aria-labelledby="hero-title"
     >
       <div
-        className="pointer-events-none absolute -right-32 top-0 h-[min(85vh,720px)] w-[min(85vw,640px)] rounded-full bg-[radial-gradient(closest-side,oklch(0.88_0.04_78/0.45),transparent)] blur-3xl"
+        className="pointer-events-none absolute -right-32 top-0 h-[min(85vh,720px)] w-[min(85vw,640px)] rounded-full bg-[radial-gradient(closest-side,oklch(0.88_0.04_78/0.45),transparent)] blur-3xl dark:bg-[radial-gradient(closest-side,oklch(0.42_0.06_72/0.4),transparent)]"
         aria-hidden
       />
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,oklch(0.99_0.006_82)_0%,transparent_42%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,oklch(0.99_0.006_82)_0%,transparent_42%)] dark:bg-[linear-gradient(180deg,oklch(0.26_0.02_54/0.95)_0%,transparent_48%)]" />
 
       <div className="relative mx-auto grid min-w-0 max-w-6xl gap-10 px-4 py-16 sm:gap-12 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:min-h-[min(88dvh,820px)] lg:grid-cols-12 lg:items-center lg:gap-10 lg:py-28">
         <div className="flex min-w-0 flex-col justify-center lg:col-span-6 lg:pr-4">
@@ -78,7 +78,7 @@ export function SiteHero({
         >
           <div className="absolute inset-0 border border-foreground/[0.08] bg-gradient-to-br from-muted/25 via-background to-muted/40" />
           <div className="absolute inset-6 border border-foreground/[0.05]" />
-          <p className="absolute bottom-10 left-10 font-display text-[clamp(3rem,8vw,5.5rem)] font-medium leading-none tracking-[-0.04em] text-foreground/[0.06]">
+          <p className="absolute bottom-10 left-10 font-display text-[clamp(3rem,8vw,5.5rem)] font-medium leading-none tracking-[-0.04em] text-foreground/[0.06] dark:text-foreground/[0.1]">
             No. 01
           </p>
         </div>

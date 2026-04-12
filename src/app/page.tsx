@@ -49,7 +49,7 @@ export default async function HomePage() {
       ) : null}
       <CategoriesStrip categories={categoryCards} />
       <section
-        className="border-b border-foreground/[0.06] bg-[oklch(0.992_0.004_82)] py-24 sm:py-32"
+        className="border-b border-foreground/[0.06] bg-[var(--surface-elevated)] py-24 sm:py-32"
         aria-labelledby="intro-heading"
       >
         <div className="mx-auto grid min-w-0 max-w-6xl gap-10 px-4 sm:gap-12 sm:px-6 md:px-8 lg:grid-cols-12 lg:gap-16">

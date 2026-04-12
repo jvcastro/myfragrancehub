@@ -15,7 +15,7 @@ export function FeaturedProductsSection({
 
   return (
     <section
-      className="border-b border-foreground/[0.06] bg-[oklch(0.992_0.004_82)] py-20 sm:py-28"
+      className="border-b border-foreground/[0.06] bg-[var(--surface-elevated)] py-20 sm:py-28"
       aria-labelledby="featured-heading"
     >
       <div className="mx-auto min-w-0 max-w-6xl px-4 sm:px-6 md:px-8">

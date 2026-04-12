@@ -92,27 +92,31 @@
   --sidebar-ring: oklch(0.708 0 0);
   --gold: oklch(0.58 0.06 72);
   --gold-foreground: oklch(0.22 0.024 52);
+  /** Strip / footer surfaces (replaces hardcoded oklch in components) */
+  --surface-elevated: oklch(0.992 0.004 82);
+  --surface-sunken: oklch(0.965 0.012 78);
 }
 
 .dark {
-  --background: oklch(0.19 0.018 50);
-  --foreground: oklch(0.97 0.012 82);
-  --card: oklch(0.22 0.02 52);
-  --card-foreground: oklch(0.97 0.012 82);
-  --popover: oklch(0.22 0.02 52);
-  --popover-foreground: oklch(0.97 0.012 82);
-  --primary: oklch(0.97 0.012 82);
-  --primary-foreground: oklch(0.2 0.022 50);
-  --secondary: oklch(0.3 0.022 55);
-  --secondary-foreground: oklch(0.97 0.012 82);
-  --muted: oklch(0.3 0.022 55);
-  --muted-foreground: oklch(0.7 0.02 78);
-  --accent: oklch(0.32 0.025 58);
-  --accent-foreground: oklch(0.97 0.012 82);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.97 0.012 82 / 12%);
-  --input: oklch(0.97 0.012 82 / 14%);
-  --ring: oklch(0.65 0.05 72);
+  --background: oklch(0.165 0.014 52);
+  --foreground: oklch(0.965 0.01 82);
+  --card: oklch(0.215 0.018 54);
+  --card-foreground: oklch(0.965 0.01 82);
+  --popover: oklch(0.22 0.018 54);
+  --popover-foreground: oklch(0.965 0.01 82);
+  --primary: oklch(0.94 0.012 82);
+  --primary-foreground: oklch(0.175 0.02 50);
+  --secondary: oklch(0.28 0.02 56);
+  --secondary-foreground: oklch(0.955 0.01 82);
+  --muted: oklch(0.28 0.02 56);
+  /* Brighter than before for WCAG on body / captions */
+  --muted-foreground: oklch(0.8 0.022 76);
+  --accent: oklch(0.31 0.022 58);
+  --accent-foreground: oklch(0.965 0.01 82);
+  --destructive: oklch(0.68 0.18 22);
+  --border: oklch(0.96 0.01 82 / 22%);
+  --input: oklch(0.96 0.01 82 / 26%);
+  --ring: oklch(0.72 0.055 72);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -126,8 +130,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-  --gold: oklch(0.68 0.065 72);
-  --gold-foreground: oklch(0.2 0.022 50);
+  --gold: oklch(0.74 0.07 72);
+  --gold-foreground: oklch(0.16 0.02 50);
+  --surface-elevated: oklch(0.21 0.018 54);
+  --surface-sunken: oklch(0.185 0.016 52);
 }
 
 @layer base {
