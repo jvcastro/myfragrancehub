@@ -27,9 +27,7 @@ export function MessengerCta({
   return (
     <a
       href={href}
-      {...(!isPlaceholder
-        ? { target: "_blank", rel: "noopener noreferrer" }
-        : { "aria-disabled": true })}
+      {...(!isPlaceholder ? {} : { "aria-disabled": true })}
       className={cn(
         buttonVariants({
           variant,

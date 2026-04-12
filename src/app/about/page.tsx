@@ -19,16 +19,18 @@ export default async function AboutPage() {
 
   return (
     <main className="flex flex-1 flex-col">
-      <div className="mx-auto min-w-0 max-w-3xl px-4 py-14 sm:px-6 sm:py-20 md:px-8 md:py-24">
-        <p className="font-accent text-[0.65rem] font-medium uppercase tracking-[0.32em] text-muted-foreground">
-          About
-        </p>
-        <h1 className="mt-4 font-display text-4xl tracking-[-0.03em] text-foreground sm:text-5xl">
-          {settings?.brandName ?? siteConfig.name}
-        </h1>
-        <Separator className="mt-8" />
-        <div className="mt-10">
-          <MarkdownBody content={body} />
+      <div className="mx-auto min-w-0 max-w-6xl px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-20">
+        <div className="max-w-3xl">
+          <p className="font-accent text-[0.65rem] font-medium uppercase tracking-[0.32em] text-muted-foreground">
+            About
+          </p>
+          <h1 className="mt-3 font-display text-4xl tracking-[-0.03em] text-foreground sm:text-5xl">
+            {settings?.brandName ?? siteConfig.name}
+          </h1>
+          <Separator className="mt-8" />
+          <div className="mt-10">
+            <MarkdownBody content={body} />
+          </div>
         </div>
       </div>
     </main>

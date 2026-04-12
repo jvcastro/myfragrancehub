@@ -170,6 +170,11 @@ export function SettingsForm() {
             {...form.register("facebookMessengerLink")}
           />
           <FormFieldError id="facebookMessengerLink-error" message={err("facebookMessengerLink")} />
+          <p className="text-xs leading-relaxed text-muted-foreground">
+            Prefer <span className="font-mono text-[0.7rem]">https://m.me/YourPage</span> so mobile
+            can open the Messenger app; avoid{" "}
+            <span className="font-mono text-[0.7rem]">messenger.com</span> links if app handoff matters.
+          </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="space-y-2">
