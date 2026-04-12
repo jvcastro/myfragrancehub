@@ -14,8 +14,10 @@ export const siteConfig = {
   defaultTitle: siteName,
   defaultDescription:
     "A curated catalog of fine fragrances, priced in Philippine peso (PHP). Inquire for availability—there is no anonymous online checkout.",
-  /** Monochrome mark in `public/` — OG / icons fallback */
+  /** Dark mark in `public/` — header/footer; light theme */
   logoPath: "/logo.png",
+  /** White mark for `.dark` (transparent / dark-friendly) */
+  logoPathDark: "/logo-dark.png",
   ogImagePath: "/logo.png",
   tagline: "Curated fine fragrance, made personal.",
   nav: [

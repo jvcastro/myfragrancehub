@@ -17,14 +17,25 @@ export function SiteLogo({
   alt = "",
   priority = false,
 }: SiteLogoProps) {
+  const common = cn("shrink-0 object-contain", className);
   return (
-    <Image
-      src={siteConfig.logoPath}
-      alt={alt}
-      width={size}
-      height={size}
-      className={cn("shrink-0 object-contain", className)}
-      priority={priority}
-    />
+    <span className="relative inline-flex shrink-0" style={{ width: size, height: size }}>
+      <Image
+        src={siteConfig.logoPath}
+        alt={alt}
+        width={size}
+        height={size}
+        className={cn(common, "dark:hidden")}
+        priority={priority}
+      />
+      <Image
+        src={siteConfig.logoPathDark}
+        alt={alt}
+        width={size}
+        height={size}
+        className={cn(common, "absolute inset-0 hidden dark:block")}
+        priority={false}
+      />
+    </span>
   );
 }
