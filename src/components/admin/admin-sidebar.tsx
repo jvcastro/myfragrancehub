@@ -15,6 +15,7 @@ const links = [
   { href: "/admin/brands", label: "Brands" },
   { href: "/admin/blog", label: "Blog" },
   { href: "/admin/settings", label: "Site settings" },
+  { href: "/admin/account", label: "Account" },
 ] as const;
 
 export function AdminSidebar() {

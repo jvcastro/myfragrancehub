@@ -1,5 +1,6 @@
 import { createTRPCRouter } from "@/server/api/trpc";
 
+import { adminAccountRouter } from "@/server/api/routers/admin/account";
 import { adminBlogRouter } from "@/server/api/routers/admin/blog";
 import { adminBrandRouter } from "@/server/api/routers/admin/brand";
 import { adminCategoryRouter } from "@/server/api/routers/admin/category";
@@ -9,6 +10,7 @@ import { adminSettingsRouter } from "@/server/api/routers/admin/settings";
 import { adminUploadRouter } from "@/server/api/routers/admin/upload";
 
 export const adminRouter = createTRPCRouter({
+  account: adminAccountRouter,
   dashboard: adminDashboardRouter,
   upload: adminUploadRouter,
   product: adminProductRouter,
